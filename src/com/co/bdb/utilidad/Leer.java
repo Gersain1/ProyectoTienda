@@ -1,33 +1,18 @@
 package com.co.bdb.utilidad;
-
 import java.util.InputMismatchException;
-import java.util.Locale;
 import java.util.Scanner;
 
-/**
- * Clase para gestionar entrada de datos y validaciones
- *
- * @author DiscoDurodeRoer
- */
 public class Leer {
 
 	// Scanner para pedir datos
 	private Scanner sc;
 
-	/**
-	 * Por defecto
-	 */
 	public Leer() {
 		sc = new Scanner(System.in);
 		//sc.useDelimiter("\n"); // Usado para nextLine()
 		//sc.useLocale(Locale.US); // Para double
 	}
 
-	/**
-	 * Nos pide un valor númerico, valida si es un valor numerico
-	 *
-	 * @return numero entero byte introducido por el usuario
-	 */
 	public byte pedirByte() {
 
 		byte num = 0;
@@ -53,12 +38,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Nos pide un valor númerico, valida si es un valor numerico
-	 *
-	 * @param mensaje
-	 * @return numero entero byte introducido por el usuario
-	 */
 	public byte pedirByte(String mensaje) {
 
 		byte num = 0;
@@ -84,13 +63,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Nos pide un valor númerico, valida si es un valor numerico
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return numero entero byte introducido por el usuario
-	 */
 	public byte pedirByte(String mensaje, String mensajeError) {
 
 		byte num = 0;
@@ -101,12 +73,12 @@ public class Leer {
 				System.out.println(mensaje);
 				num = sc.nextByte();
 			} catch (InputMismatchException ex) {
-				// En caso de error, se marca como incorrecto
+				// En caso de error se marca como incorrecto
 				correcto = false;
 				sc.next();
 			}
 
-			// En caso de error, muestro el error
+			// En caso de error muestro el error
 			if (!correcto) {
 				System.out.println(mensajeError);
 			}
@@ -116,11 +88,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un valor entero positivo, valida que sea un numero y que sea positivo
-	 *
-	 * @return numero entero byte positivo introducido por el usuario
-	 */
 	public byte pedirBytePositivo() {
 
 		byte num;
@@ -143,12 +110,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un valor entero positivo, valida que sea un numero y que sea positivo
-	 *
-	 * @param mensaje
-	 * @return numero entero byte positivo introducido por el usuario
-	 */
 	public byte pedirBytePositivo(String mensaje) {
 
 		byte num;
@@ -171,13 +132,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un valor entero positivo, valida que sea un numero y que sea positivo
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return numero entero byte positivo introducido por el usuario
-	 */
 	public byte pedirBytePositivo(String mensaje, String mensajeError) {
 
 		byte num;
@@ -200,11 +154,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entero negativo, valida que sea un numero y sea negativo
-	 *
-	 * @return numero entero byte negativo introducido por el usuario
-	 */
 	public byte pedirByteNegativo() {
 		byte num;
 		do {
@@ -226,12 +175,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entero negativo, valida que sea un numero y sea negativo
-	 *
-	 * @param mensaje
-	 * @return numero entero byte negativo introducido por el usuario
-	 */
 	public byte pedirByteNegativo(String mensaje) {
 		byte num;
 		do {
@@ -253,13 +196,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entero negativo, valida que sea un numero y sea negativo
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return numero entero byte negativo introducido por el usuario
-	 */
 	public byte pedirByteNegativo(String mensaje, String mensajeError) {
 		byte num;
 		do {
@@ -281,13 +217,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entre dos numeros que le pasamos
-	 *
-	 * @param minimo
-	 * @param maximo
-	 * @return numero entero byte introducido por el usuario
-	 */
 	public byte pedirByteRango(byte minimo, byte maximo) {
 		byte num;
 
@@ -317,14 +246,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entre dos numeros que le pasamos
-	 *
-	 * @param minimo
-	 * @param maximo
-	 * @param mensaje
-	 * @return numero entero byte introducido por el usuario
-	 */
 	public byte pedirByteRango(byte minimo, byte maximo, String mensaje) {
 		byte num;
 
@@ -354,15 +275,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entre dos numeros que le pasamos
-	 *
-	 * @param minimo
-	 * @param maximo
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return numero entero byte introducido por el usuario
-	 */
 	public byte pedirByteRango(byte minimo, byte maximo, String mensaje, String mensajeError) {
 		byte num;
 
@@ -392,11 +304,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Nos pide un valor númerico, valida si es un valor numerico
-	 *
-	 * @return numero entero introducido por el usuario
-	 */
 	public int pedirInt() {
 
 		int num = 0;
@@ -422,12 +329,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Nos pide un valor númerico, valida si es un valor numerico
-	 *
-	 * @param mensaje
-	 * @return numero entero introducido por el usuario
-	 */
 	public int pedirInt(String mensaje) {
 
 		int num = 0;
@@ -453,13 +354,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Nos pide un valor númerico, valida si es un valor numerico
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return numero entero introducido por el usuario
-	 */
 	public int pedirInt(String mensaje, String mensajeError) {
 
 		int num = 0;
@@ -485,11 +379,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un valor entero positivo, valida que sea un numero y que sea positivo
-	 *
-	 * @return numero entero positivo introducido por el usuario
-	 */
 	public int pedirIntPositivo() {
 
 		int num;
@@ -512,12 +401,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un valor entero positivo, valida que sea un numero y que sea positivo
-	 *
-	 * @param mensaje
-	 * @return numero entero positivo introducido por el usuario
-	 */
 	public int pedirIntPositivo(String mensaje) {
 
 		int num;
@@ -540,13 +423,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un valor entero positivo, valida que sea un numero y que sea positivo
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return numero entero positivo introducido por el usuario
-	 */
 	public int pedirIntPositivo(String mensaje, String mensajeError) {
 
 		int num;
@@ -569,11 +445,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entero negativo, valida que sea un numero y sea negativo
-	 *
-	 * @return numero entero negativo introducido por el usuario
-	 */
 	public int pedirIntNegativo() {
 		int num;
 		do {
@@ -595,12 +466,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entero negativo, valida que sea un numero y sea negativo
-	 *
-	 * @param mensaje
-	 * @return numero entero negativo introducido por el usuario
-	 */
 	public int pedirIntNegativo(String mensaje) {
 		int num;
 		do {
@@ -622,13 +487,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entero negativo, valida que sea un numero y sea negativo
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return numero entero negativo introducido por el usuario
-	 */
 	public int pedirIntNegativo(String mensaje, String mensajeError) {
 		int num;
 		do {
@@ -650,13 +508,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entre dos numeros que le pasamos
-	 *
-	 * @param minimo
-	 * @param maximo
-	 * @return numero entero introducido por el usuario
-	 */
 	public int pedirIntRango(int minimo, int maximo) {
 		int num;
 
@@ -686,14 +537,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entre dos numeros que le pasamos
-	 *
-	 * @param minimo
-	 * @param maximo
-	 * @param mensaje
-	 * @return numero entero introducido por el usuario
-	 */
 	public int pedirIntRango(int minimo, int maximo, String mensaje) {
 		int num;
 
@@ -723,15 +566,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entre dos numeros que le pasamos
-	 *
-	 * @param minimo
-	 * @param maximo
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return numero entero introducido por el usuario
-	 */
 	public int pedirIntRango(int minimo, int maximo, String mensaje, String mensajeError) {
 		int num;
 
@@ -761,11 +595,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide una cadena
-	 *
-	 * @return cadena introducida por el usuario
-	 */
 	public String pedirString() {
 
 		System.out.println("Introduce una cadena");
@@ -775,12 +604,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Pide una cadena
-	 *
-	 * @param mensaje
-	 * @return cadena introducida por el usuario
-	 */
 	public String pedirString(String mensaje) {
 
 		System.out.print(mensaje + "\t");
@@ -790,12 +613,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Pide una cadena con una longitud maxima
-	 *
-	 * @param longitudMaxima
-	 * @return cadena introducida por el usuario
-	 */
 	public String pedirString(int longitudMaxima) {
 
 		String cadena = "";
@@ -813,13 +630,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Pide una cadena con una longitud maxima
-	 *
-	 * @param longitudMaxima
-	 * @param mensaje
-	 * @return cadena introducida por el usuario
-	 */
 	public String pedirString(int longitudMaxima, String mensaje) {
 
 		String cadena = "";
@@ -837,14 +647,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Pide una cadena con una longitud maxima
-	 *
-	 * @param longitudMaxima
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return cadena introducida por el usuario
-	 */
 	public String pedirString(int longitudMaxima, String mensaje, String mensajeError) {
 
 		String cadena = "";
@@ -862,11 +664,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Nos pide un valor númerico, valida si es un valor numerico
-	 *
-	 * @return numero entero introducido por el usuario
-	 */
 	public long pedirLong() {
 
 		long num = 0;
@@ -892,12 +689,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Nos pide un valor númerico, valida si es un valor numerico
-	 *
-	 * @param mensaje
-	 * @return numero entero introducido por el usuario
-	 */
 	public long pedirLong(String mensaje) {
 
 		long num = 0;
@@ -923,13 +714,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Nos pide un valor númerico, valida si es un valor numerico
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return numero entero introducido por el usuario
-	 */
 	public long pedirLong(String mensaje, String mensajeError) {
 
 		long num = 0;
@@ -955,11 +739,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un valor entero positivo, valida que sea un numero y que sea positivo
-	 *
-	 * @return numero entero byte positivo introducido por el usuario
-	 */
 	public long pedirLongPositivo() {
 
 		long num;
@@ -982,12 +761,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un valor entero positivo, valida que sea un numero y que sea positivo
-	 *
-	 * @param mensaje
-	 * @return numero entero byte positivo introducido por el usuario
-	 */
 	public long pedirLongPositivo(String mensaje) {
 
 		long num;
@@ -1010,13 +783,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un valor entero positivo, valida que sea un numero y que sea positivo
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return numero entero byte positivo introducido por el usuario
-	 */
 	public long pedirLongPositivo(String mensaje, String mensajeError) {
 
 		long num;
@@ -1039,11 +805,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entero negativo, valida que sea un numero y sea negativo
-	 *
-	 * @return numero entero byte negativo introducido por el usuario
-	 */
 	public long pedirLongNegativo() {
 		long num;
 		do {
@@ -1065,12 +826,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entero negativo, valida que sea un numero y sea negativo
-	 *
-	 * @param mensaje
-	 * @return numero entero byte negativo introducido por el usuario
-	 */
 	public long pedirLongNegativo(String mensaje) {
 		long num;
 		do {
@@ -1092,13 +847,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entero negativo, valida que sea un numero y sea negativo
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return numero entero byte negativo introducido por el usuario
-	 */
 	public long pedirLongNegativo(String mensaje, String mensajeError) {
 		long num;
 		do {
@@ -1120,13 +868,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entre dos numeros que le pasamos
-	 *
-	 * @param minimo
-	 * @param maximo
-	 * @return numero entero byte introducido por el usuario
-	 */
 	public long pedirLongRango(long minimo, long maximo) {
 		long num;
 
@@ -1156,14 +897,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entre dos numeros que le pasamos
-	 *
-	 * @param minimo
-	 * @param maximo
-	 * @param mensaje
-	 * @return numero entero byte introducido por el usuario
-	 */
 	public long pedirLongRango(long minimo, long maximo, String mensaje) {
 		long num;
 
@@ -1193,15 +926,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entre dos numeros que le pasamos
-	 *
-	 * @param minimo
-	 * @param maximo
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return numero entero byte introducido por el usuario
-	 */
 	public long pedirLongRango(long minimo, long maximo, String mensaje, String mensajeError) {
 		long num;
 
@@ -1231,11 +955,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Nos pide un valor númerico, valida si es un valor numerico
-	 *
-	 * @return numero entero introducido por el usuario
-	 */
 	public short pedirShort() {
 
 		short num = 0;
@@ -1261,12 +980,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Nos pide un valor númerico, valida si es un valor numerico
-	 *
-	 * @param mensaje
-	 * @return numero entero introducido por el usuario
-	 */
 	public short pedirShort(String mensaje) {
 
 		short num = 0;
@@ -1292,13 +1005,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Nos pide un valor númerico, valida si es un valor numerico
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return numero entero introducido por el usuario
-	 */
 	public short pedirShort(String mensaje, String mensajeError) {
 
 		short num = 0;
@@ -1324,11 +1030,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un valor entero positivo, valida que sea un numero y que sea positivo
-	 *
-	 * @return numero entero byte positivo introducido por el usuario
-	 */
 	public short pedirShortPositivo() {
 
 		short num;
@@ -1351,12 +1052,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un valor entero positivo, valida que sea un numero y que sea positivo
-	 *
-	 * @param mensaje
-	 * @return numero entero byte positivo introducido por el usuario
-	 */
 	public short pedirShortPositivo(String mensaje) {
 
 		short num;
@@ -1379,13 +1074,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un valor entero positivo, valida que sea un numero y que sea positivo
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return numero entero byte positivo introducido por el usuario
-	 */
 	public short pedirShortPositivo(String mensaje, String mensajeError) {
 
 		short num;
@@ -1408,11 +1096,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entero negativo, valida que sea un numero y sea negativo
-	 *
-	 * @return numero entero byte negativo introducido por el usuario
-	 */
 	public short pedirShortNegativo() {
 		short num;
 		do {
@@ -1434,12 +1117,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entero negativo, valida que sea un numero y sea negativo
-	 *
-	 * @param mensaje
-	 * @return numero entero byte negativo introducido por el usuario
-	 */
 	public short pedirShortNegativo(String mensaje) {
 		short num;
 		do {
@@ -1461,13 +1138,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entero negativo, valida que sea un numero y sea negativo
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return numero entero byte negativo introducido por el usuario
-	 */
 	public short pedirShortNegativo(String mensaje, String mensajeError) {
 		short num;
 		do {
@@ -1489,13 +1159,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entre dos numeros que le pasamos
-	 *
-	 * @param minimo
-	 * @param maximo
-	 * @return numero entero byte introducido por el usuario
-	 */
 	public short pedirShortRango(long minimo, long maximo) {
 		short num;
 
@@ -1525,14 +1188,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entre dos numeros que le pasamos
-	 *
-	 * @param minimo
-	 * @param maximo
-	 * @param mensaje
-	 * @return numero entero byte introducido por el usuario
-	 */
 	public short pedirShortRango(short minimo, short maximo, String mensaje) {
 		short num;
 
@@ -1562,15 +1217,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un numero entre dos numeros que le pasamos
-	 *
-	 * @param minimo
-	 * @param maximo
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return numero entero byte introducido por el usuario
-	 */
 	public short pedirShortRango(short minimo, short maximo, String mensaje, String mensajeError) {
 		short num;
 
@@ -1600,11 +1246,6 @@ public class Leer {
 		return num;
 	}
 
-	/**
-	 * Pide un double, valida que sea un numero
-	 *
-	 * @return double introducido por el usuario
-	 */
 	public double pedirDouble() {
 
 		double real = 0;
@@ -1630,12 +1271,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Pide un double, valida que sea un numero
-	 *
-	 * @param mensaje
-	 * @return double introducido por el usuario
-	 */
 	public double pedirDouble(String mensaje) {
 
 		double real = 0;
@@ -1661,13 +1296,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Pide un double, valida que sea un numero
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return double introducido por el usuario
-	 */
 	public double pedirDouble(String mensaje, String mensajeError) {
 
 		double real = 0;
@@ -1693,11 +1321,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Pide un double positivo, valida que sea un numero y positivo
-	 *
-	 * @return double positivo introducido por el usuario
-	 */
 	public double pedirDoublePositivo() {
 
 		double real;
@@ -1719,12 +1342,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un double positivo, valida que sea un numero y positivo
-	 *
-	 * @param mensaje
-	 * @return double positivo introducido por el usuario
-	 */
 	public double pedirDoublePositivo(String mensaje) {
 
 		double real;
@@ -1746,13 +1363,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un double positivo, valida que sea un numero y positivo
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return double positivo introducido por el usuario
-	 */
 	public double pedirDoublePositivo(String mensaje, String mensajeError) {
 
 		double real;
@@ -1774,11 +1384,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un double negativo, valida que sea un numero y negativo
-	 *
-	 * @return double negativo introducido por el usuario
-	 */
 	public double pedirDoubleNegativo() {
 		double real;
 		do {
@@ -1799,12 +1404,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un double negativo, valida que sea un numero y negativo
-	 *
-	 * @param mensaje
-	 * @return double negativo introducido por el usuario
-	 */
 	public double pedirDoubleNegativo(String mensaje) {
 		double real;
 		do {
@@ -1825,13 +1424,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un double negativo, valida que sea un numero y negativo
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return double negativo introducido por el usuario
-	 */
 	public double pedirDoubleNegativo(String mensaje, String mensajeError) {
 		double real;
 		do {
@@ -1852,13 +1444,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un double entre en un rango, valida que sea un numero
-	 *
-	 * @param minimo
-	 * @param maximo
-	 * @return double entre un rango introducido por el usuario
-	 */
 	public double pedirDoubleRango(double minimo, double maximo) {
 
 		double real;
@@ -1889,14 +1474,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un double entre en un rango, valida que sea un numero
-	 *
-	 * @param minimo
-	 * @param maximo
-	 * @param mensaje
-	 * @return double entre un rango introducido por el usuario
-	 */
 	public double pedirDoubleRango(double minimo, double maximo, String mensaje) {
 
 		double real;
@@ -1927,15 +1504,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un double entre en un rango, valida que sea un numero
-	 *
-	 * @param minimo
-	 * @param maximo
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return double entre un rango introducido por el usuario
-	 */
 	public double pedirDoubleRango(double minimo, double maximo, String mensaje, String mensajeError) {
 
 		double real;
@@ -1965,12 +1533,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un double, con un numero de decimales como maximo
-	 *
-	 * @param decimales
-	 * @return double con un double con unos decimales menos que lo indicado
-	 */
 	public double pedirDoubleDecimales(int decimales) {
 
 		if (decimales < 1) {
@@ -2007,13 +1569,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Pide un double, con un numero de decimales como maximo
-	 *
-	 * @param decimales
-	 * @param mensaje
-	 * @return double con un double con unos decimales menos que lo indicado
-	 */
 	public double pedirDoubleDecimales(int decimales, String mensaje) {
 
 		if (decimales < 1) {
@@ -2050,14 +1605,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Pide un double, con un numero de decimales como maximo
-	 *
-	 * @param decimales
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return double con un double con unos decimales menos que lo indicado
-	 */
 	public double pedirDoubleDecimales(int decimales, String mensaje, String mensajeError) {
 
 		if (decimales < 1) {
@@ -2094,13 +1641,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Pide un double positivo, con un numero de decimales como maximo
-	 *
-	 * @param decimales
-	 * @return double con un double positivo con unos decimales menos que lo
-	 *         indicado
-	 */
 	public double pedirDoublePositivoDecimales(int decimales) {
 
 		double real;
@@ -2131,14 +1671,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un double positivo, con un numero de decimales como maximo
-	 *
-	 * @param decimales
-	 * @param mensaje
-	 * @return double con un double positivo con unos decimales menos que lo
-	 *         indicado
-	 */
 	public double pedirDoublePositivoDecimales(int decimales, String mensaje) {
 
 		double real;
@@ -2168,15 +1700,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un double positivo, con un numero de decimales como maximo
-	 *
-	 * @param decimales
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return double con un double positivo con unos decimales menos que lo
-	 *         indicado
-	 */
 	public double pedirDoublePositivoDecimales(int decimales, String mensaje, String mensajeError) {
 
 		double real;
@@ -2206,11 +1729,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un float, valida que sea un numero
-	 *
-	 * @return float introducido por el usuario
-	 */
 	public float pedirFloat() {
 
 		float real = 0;
@@ -2236,12 +1754,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Pide un float, valida que sea un numero
-	 *
-	 * @param mensaje
-	 * @return float introducido por el usuario
-	 */
 	public float pedirFloat(String mensaje) {
 
 		float real = 0;
@@ -2267,13 +1779,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Pide un float, valida que sea un numero
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return float introducido por el usuario
-	 */
 	public float pedirFloat(String mensaje, String mensajeError) {
 
 		float real = 0;
@@ -2299,11 +1804,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Pide un float positivo, valida que sea un numero y positivo
-	 *
-	 * @return float positivo introducido por el usuario
-	 */
 	public float pedirFloatPositivo() {
 
 		float real;
@@ -2325,12 +1825,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un float positivo, valida que sea un numero y positivo
-	 *
-	 * @param mensaje
-	 * @return float positivo introducido por el usuario
-	 */
 	public float pedirFloatPositivo(String mensaje) {
 
 		float real;
@@ -2352,13 +1846,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un float positivo, valida que sea un numero y positivo
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return float positivo introducido por el usuario
-	 */
 	public float pedirFloatPositivo(String mensaje, String mensajeError) {
 
 		float real;
@@ -2380,11 +1867,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un float negativo, valida que sea un numero y negativo
-	 *
-	 * @return float negativo introducido por el usuario
-	 */
 	public float pedirFloatNegativo() {
 		float real;
 		do {
@@ -2405,12 +1887,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un float negativo, valida que sea un numero y negativo
-	 *
-	 * @param mensaje
-	 * @return float negativo introducido por el usuario
-	 */
 	public float pedirFloatNegativo(String mensaje) {
 		float real;
 		do {
@@ -2431,13 +1907,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un float negativo, valida que sea un numero y negativo
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return float negativo introducido por el usuario
-	 */
 	public float pedirFloatNegativo(String mensaje, String mensajeError) {
 		float real;
 		do {
@@ -2458,13 +1927,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un float entre en un rango, valida que sea un numero
-	 *
-	 * @param minimo
-	 * @param maximo
-	 * @return float entre un rango introducido por el usuario
-	 */
 	public float pedirFloatRango(float minimo, float maximo) {
 
 		float real;
@@ -2495,14 +1957,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un float entre en un rango, valida que sea un numero
-	 *
-	 * @param minimo
-	 * @param maximo
-	 * @param mensaje
-	 * @return float entre un rango introducido por el usuario
-	 */
 	public float pedirFloatRango(float minimo, float maximo, String mensaje) {
 
 		float real;
@@ -2533,15 +1987,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un float entre en un rango, valida que sea un numero
-	 *
-	 * @param minimo
-	 * @param maximo
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return float entre un rango introducido por el usuario
-	 */
 	public float pedirFloatRango(float minimo, float maximo, String mensaje, String mensajeError) {
 
 		float real;
@@ -2571,12 +2016,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un float, con un numero de decimales como maximo
-	 *
-	 * @param decimales
-	 * @return float con unos decimales menos que lo indicado
-	 */
 	public float pedirFloatDecimales(int decimales) {
 
 		if (decimales < 1) {
@@ -2613,13 +2052,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Pide un float, con un numero de decimales como maximo
-	 *
-	 * @param decimales
-	 * @param mensaje
-	 * @return float con unos decimales menos que lo indicado
-	 */
 	public float pedirFloatDecimales(int decimales, String mensaje) {
 
 		if (decimales < 1) {
@@ -2656,14 +2088,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Pide un float, con un numero de decimales como maximo
-	 *
-	 * @param decimales
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return float con unos decimales menos que lo indicado
-	 */
 	public float pedirFloatDecimales(int decimales, String mensaje, String mensajeError) {
 
 		if (decimales < 1) {
@@ -2700,12 +2124,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Pide un float positivo, con un numero de decimales como maximo
-	 *
-	 * @param decimales
-	 * @return float positivo con unos decimales menos que lo indicado
-	 */
 	public float pedirFloatPositivoDecimales(int decimales) {
 
 		float real;
@@ -2736,13 +2154,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un float positivo, con un numero de decimales como maximo
-	 *
-	 * @param decimales
-	 * @param mensaje
-	 * @return double con un float positivo con unos decimales menos que lo indicado
-	 */
 	public float pedirFloatPositivoDecimales(int decimales, String mensaje) {
 
 		float real;
@@ -2772,14 +2183,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un float positivo, con un numero de decimales como maximo
-	 *
-	 * @param decimales
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return float positivo con unos decimales menos que lo indicado
-	 */
 	public float pedirFloatPositivoDecimales(int decimales, String mensaje, String mensajeError) {
 
 		float real;
@@ -2809,11 +2212,6 @@ public class Leer {
 		return real;
 	}
 
-	/**
-	 * Pide un char, si tiene mas de un caracter, coge el primero
-	 *
-	 * @return
-	 */
 	public char pedirChar() {
 
 		System.out.println("Introduce un caracter (en caso de tener mas de un caracter, se cogera el primer caracter)");
@@ -2823,12 +2221,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Pide un char, si tiene mas de un caracter, coge el primero
-	 *
-	 * @param mensaje
-	 * @return
-	 */
 	public char pedirChar(String mensaje) {
 
 		System.out.println(mensaje);
@@ -2838,11 +2230,6 @@ public class Leer {
 
 	}
 
-	/**
-	 * Pide un booleano, valida que sea un booleano
-	 *
-	 * @return booleano introducido por el usuario
-	 */
 	public boolean pedirBoolean() {
 
 		boolean booleano = false, correcto;
@@ -2864,12 +2251,6 @@ public class Leer {
 		return booleano;
 	}
 
-	/**
-	 * Pide un booleano, valida que sea un booleano
-	 *
-	 * @param mensaje
-	 * @return booleano introducido por el usuario
-	 */
 	public boolean pedirBoolean(String mensaje) {
 
 		boolean booleano = false, correcto;
@@ -2891,13 +2272,6 @@ public class Leer {
 		return booleano;
 	}
 
-	/**
-	 * Pide un booleano, valida que sea un booleano
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return booleano introducido por el usuario
-	 */
 	public boolean pedirBoolean(String mensaje, String mensajeError) {
 
 		boolean booleano = false, correcto;
@@ -2919,11 +2293,6 @@ public class Leer {
 		return booleano;
 	}
 
-	/**
-	 * Pide al usuario un si o un no, true = si, no = false
-	 *
-	 * @return booleano introducido por el usuario
-	 */
 	public boolean pedirBooleanSiNo() {
 
 		boolean correcto, booleano = false;
@@ -2960,12 +2329,6 @@ public class Leer {
 		return booleano;
 	}
 
-	/**
-	 * Pide al usuario un si o un no, true = si, no = false
-	 *
-	 * @param mensaje
-	 * @return booleano introducido por el usuario
-	 */
 	public boolean pedirBooleanSiNo(String mensaje) {
 
 		boolean correcto, booleano = false;
@@ -3002,13 +2365,6 @@ public class Leer {
 		return booleano;
 	}
 
-	/**
-	 * Pide al usuario un si o un no, true = si, no = false
-	 *
-	 * @param mensaje
-	 * @param mensajeError
-	 * @return booleano introducido por el usuario
-	 */
 	public boolean pedirBooleanSiNo(String mensaje, String mensajeError) {
 
 		boolean correcto, booleano = false;

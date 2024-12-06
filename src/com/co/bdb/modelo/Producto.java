@@ -26,17 +26,14 @@ public class Producto {
 	}
 
 	public void setIdProducto(String idProducto) {
-
 		this.idProducto = idProducto;
 	}
 
 	public String getNombreProduto() {
-
 		return nombreProduto;
 	}
 
 	public void setNombreProduto(String nombreProduto) {
-
 		this.nombreProduto = nombreProduto;
 	}
 
@@ -45,7 +42,6 @@ public class Producto {
 	}
 
 	public void setCategoria(String categoria) {
-
 		this.categoria = categoria;
 	}
 
@@ -54,23 +50,20 @@ public class Producto {
 	}
 
 	public void setPrecio(float precio) {
-
 		this.precio = precio;
 	}
 
 	public int getCantidadDisponible() {
-
 		return cantidadDisponible;
 	}
 
 	public void setCantidadDisponible(int cantidadDisponible) {
-
 		this.cantidadDisponible = cantidadDisponible;
 	}
 
 	public String textoProducto() {
-		return idProducto + "-" + nombreProduto + "-" + categoria
-				+ "-" + precio + "-" + cantidadDisponible ;
+		return idProducto + "|" + nombreProduto + "|" + categoria
+				+ "|" + precio + "|" + cantidadDisponible ;
 	}
 
 	public String toString() {
