@@ -192,7 +192,7 @@ public class Archivo {
 			crearNuevoListadoProducto(listObjProdFinal, false);
 
 		} catch (IOException e) {
-			System.out.println(" No es posible acceder al archivo:" + e.getMessage());
+			System.out.println("No es posible acceder al archivo:" + e.getMessage());
 		}
 
 		return eliminado;
@@ -256,7 +256,7 @@ public class Archivo {
 			crearNuevoListadoProducto(listObjProdFinal, false);
 
 		} catch (IOException e) {
-			System.out.println(" No es posible acceder al archivo:" + e.getMessage());
+			System.out.println("No es posible acceder al archivo:" + e.getMessage());
 		}
 
 		return actualizado;
@@ -272,7 +272,7 @@ public class Archivo {
 			while ((linea = reader.readLine()) != null) {
 
 				sb.append(linea);
-				if (sb.toString().toUpperCase().contains("_ID")) {
+				if (sb.toString().toUpperCase().contains("ID")) {
 					titulo = true;
 				}
 			}
@@ -281,7 +281,7 @@ public class Archivo {
 
 		} catch (IOException e) {
 
-			System.out.println(" No es posible acceder al archivo:" + e.getMessage());
+			System.out.println("No es posible acceder al archivo:" + e.getMessage());
 		}
 		return titulo;
 
@@ -292,7 +292,7 @@ public class Archivo {
 		String[] columnas = linea.split("\\|");
 
 		for (String col : columnas) {
-			if (col.toUpperCase().contains("_ID")) {
+			if (col.toUpperCase().contains("ID")) {
 				return true;
 			}
 		}
@@ -306,7 +306,7 @@ public class Archivo {
 		try {
 			buffer = new BufferedWriter(new FileWriter(archivo, actualizar));
 			if (!tieneTitulo()) {
-				buffer.write("_Id-NombreProducto-Categoria-Precio-CantidadDisponible");
+				buffer.write("Id-NombreProducto - Categoria - Precio - CantidadDisponible");
 				buffer.newLine();
 			}
 			for (Producto producto : listProducto) {
@@ -315,7 +315,7 @@ public class Archivo {
 			}
 			buffer.close();
 		} catch (IOException e) {
-			System.out.println(" No es posible acceder al archivo:" + e.getMessage());
+			System.out.println("No es posible acceder al archivo:" + e.getMessage());
 		}
 
 	}
@@ -325,7 +325,7 @@ public class Archivo {
 		File archivo = new File(nombre);
 		Producto objProducto;
 		List<Producto> listProducto = new ArrayList<>();
-		// Inicializar variables para buscar el producto más caro
+		//Inicializa variables para buscar el producto más caro
 		Producto productoMayorPrecio = null;
 		float precioMaximo = Float.MIN_VALUE;
 

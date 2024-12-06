@@ -161,11 +161,11 @@ public class Inventario {
 	}
 
 	public void reporteInventario() {
-		System.out.println("*****************\n ");
+		System.out.println("*****************\n");
 		miArchivo = new Archivo();
 		List<Producto> listProducto = new ArrayList<Producto>();
 
-		// obtener el listado de todos los productos
+		// obtiene el listado de todos los productos
 		listProducto = miArchivo.buscarProductoPorCampo(null, 4);
 		List<String> linea = new ArrayList<>();
 		float valorTotal = 0F;

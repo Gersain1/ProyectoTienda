@@ -28,9 +28,9 @@ public class Leer {
 				sc.next();
 			}
 
-			// En caso de error, muestro el error
+			//en caso de error muestra el error
 			if (!correcto) {
-				System.out.println("Error, introducce un numero entero byte");
+				System.out.println("Error introducce un numero entero byte");
 			}
 
 		} while (!correcto);
@@ -55,7 +55,7 @@ public class Leer {
 
 			// En caso de error, muestro el error
 			if (!correcto) {
-				System.out.println("Error, introducce un numero entero byte");
+				System.out.println("Error introducce un numero entero byte");
 			}
 
 		} while (!correcto);
@@ -102,7 +102,7 @@ public class Leer {
 			}
 
 			if (num < 0) {
-				System.out.println("Error, introducce un numero entero byte positivo");
+				System.out.println("Error introducce un numero entero byte positivo");
 			}
 
 		} while (num < 0);
@@ -124,7 +124,7 @@ public class Leer {
 			}
 
 			if (num < 0) {
-				System.out.println("Error, introducce un numero entero byte positivo");
+				System.out.println("Error introducce un numero entero byte positivo");
 			}
 
 		} while (num < 0);
@@ -167,7 +167,7 @@ public class Leer {
 			}
 
 			if (num >= 0) {
-				System.out.println("Error, introducce un numero entero byte negativo");
+				System.out.println("Error introducce un numero entero byte negativo");
 			}
 
 		} while (num >= 0);
@@ -188,7 +188,7 @@ public class Leer {
 			}
 
 			if (num >= 0) {
-				System.out.println("Error, introducce un numero entero byte negativo");
+				System.out.println("Error introducce un numero entero byte negativo");
 			}
 
 		} while (num >= 0);
@@ -238,7 +238,7 @@ public class Leer {
 			}
 
 			if (!(num >= minimo && num <= maximo)) {
-				System.out.println("Error, Introduce un numero byte entre " + minimo + " y " + maximo);
+				System.out.println("Error Introduce un numero byte entre " + minimo + " y " + maximo);
 			}
 
 		} while (!(num >= minimo && num <= maximo));
@@ -267,7 +267,7 @@ public class Leer {
 			}
 
 			if (!(num >= minimo && num <= maximo)) {
-				System.out.println("Error, Introduce un numero byte entre " + minimo + " y " + maximo);
+				System.out.println("Error Introduce un numero byte entre " + minimo + " y " + maximo);
 			}
 
 		} while (!(num >= minimo && num <= maximo));
@@ -321,7 +321,7 @@ public class Leer {
 
 			// En caso de error, muestro el error
 			if (!correcto) {
-				System.out.println("Error, introducce un numero entero integer");
+				System.out.println("Error introducce un numero entero integer");
 			}
 
 		} while (!correcto);
@@ -346,7 +346,7 @@ public class Leer {
 
 			// En caso de error, muestro el error
 			if (!correcto) {
-				System.out.println("Error, introducce un numero entero integer");
+				System.out.println("Error introducce un numero entero integer");
 			}
 
 		} while (!correcto);
@@ -393,7 +393,7 @@ public class Leer {
 			}
 
 			if (num < 0) {
-				System.out.println("Error, introducce un numero entero positivo integer");
+				System.out.println("Error introducce un numero entero positivo integer");
 			}
 
 		} while (num < 0);
@@ -415,7 +415,7 @@ public class Leer {
 			}
 
 			if (num < 0) {
-				System.out.println("Error, introducce un numero entero positivo integer");
+				System.out.println("Error introducce un numero entero positivo integer");
 			}
 
 		} while (num < 0);
@@ -458,7 +458,7 @@ public class Leer {
 			}
 
 			if (num >= 0) {
-				System.out.println("Error, introducce un numero entero negativo integer");
+				System.out.println("Error introducce un numero entero negativo integer");
 			}
 
 		} while (num >= 0);
@@ -479,7 +479,7 @@ public class Leer {
 			}
 
 			if (num >= 0) {
-				System.out.println("Error, introducce un numero entero negativo integer");
+				System.out.println("Error introducce un numero entero negativo integer");
 			}
 
 		} while (num >= 0);
@@ -529,7 +529,7 @@ public class Leer {
 			}
 
 			if (!(num >= minimo && num <= maximo)) {
-				System.out.println("Error, Introduce un numero integer entre " + minimo + " y " + maximo);
+				System.out.println("Error Introduce un numero integer entre " + minimo + " y " + maximo);
 			}
 
 		} while (!(num >= minimo && num <= maximo));
@@ -558,7 +558,7 @@ public class Leer {
 			}
 
 			if (!(num >= minimo && num <= maximo)) {
-				System.out.println("Error, Introduce un numero integer entre " + minimo + " y " + maximo);
+				System.out.println("Error Introduce un numero integer entre " + minimo + " y " + maximo);
 			}
 
 		} while (!(num >= minimo && num <= maximo));
@@ -621,7 +621,7 @@ public class Leer {
 			cadena = sc.next();
 
 			if (!(cadena.length() < longitudMaxima)) {
-				System.out.println("Error, la longitud maxima es " + longitudMaxima + " caracteres");
+				System.out.println("Error la longitud maxima es " + longitudMaxima + " caracteres");
 			}
 
 		} while (!(cadena.length() < longitudMaxima));
@@ -638,7 +638,7 @@ public class Leer {
 			cadena = sc.next();
 
 			if (!(cadena.length() < longitudMaxima)) {
-				System.out.println("Error, la longitud maxima es " + longitudMaxima + " caracteres");
+				System.out.println("Error la longitud maxima es " + longitudMaxima + " caracteres");
 			}
 
 		} while (!(cadena.length() < longitudMaxima));
@@ -681,7 +681,7 @@ public class Leer {
 
 			// En caso de error, muestro el error
 			if (!correcto) {
-				System.out.println("Error, introducce un numero entero long");
+				System.out.println("Error introducce un numero entero long");
 			}
 
 		} while (!correcto);
@@ -706,7 +706,7 @@ public class Leer {
 
 			// En caso de error, muestro el error
 			if (!correcto) {
-				System.out.println("Error, introducce un numero entero long");
+				System.out.println("Error introducce un numero entero long");
 			}
 
 		} while (!correcto);
@@ -753,7 +753,7 @@ public class Leer {
 			}
 
 			if (num < 0) {
-				System.out.println("Error, introducce un numero entero positivo long");
+				System.out.println("Error introducce un numero entero positivo long");
 			}
 
 		} while (num < 0);
@@ -775,7 +775,7 @@ public class Leer {
 			}
 
 			if (num < 0) {
-				System.out.println("Error, introducce un numero entero positivo long");
+				System.out.println("Error introducce un numero entero positivo long");
 			}
 
 		} while (num < 0);
@@ -818,7 +818,7 @@ public class Leer {
 			}
 
 			if (num >= 0) {
-				System.out.println("Error, introducce un numero entero negativo long");
+				System.out.println("Error introducce un numero entero negativo long");
 			}
 
 		} while (num >= 0);
@@ -839,7 +839,7 @@ public class Leer {
 			}
 
 			if (num >= 0) {
-				System.out.println("Error, introducce un numero entero negativo long");
+				System.out.println("Error introducce un numero entero negativo long");
 			}
 
 		} while (num >= 0);
@@ -889,7 +889,7 @@ public class Leer {
 			}
 
 			if (!(num >= minimo && num <= maximo)) {
-				System.out.println("Error, Introduce un numero long entre " + minimo + " y " + maximo);
+				System.out.println("Error Introduce un numero long entre " + minimo + " y " + maximo);
 			}
 
 		} while (!(num >= minimo && num <= maximo));
@@ -918,7 +918,7 @@ public class Leer {
 			}
 
 			if (!(num >= minimo && num <= maximo)) {
-				System.out.println("Error, Introduce un numero long entre " + minimo + " y " + maximo);
+				System.out.println("Error Introduce un numero long entre " + minimo + " y " + maximo);
 			}
 
 		} while (!(num >= minimo && num <= maximo));
@@ -972,7 +972,7 @@ public class Leer {
 
 			// En caso de error, muestro el error
 			if (!correcto) {
-				System.out.println("Error, introducce un numero entero short");
+				System.out.println("Error introducce un numero entero short");
 			}
 
 		} while (!correcto);
@@ -997,7 +997,7 @@ public class Leer {
 
 			// En caso de error, muestro el error
 			if (!correcto) {
-				System.out.println("Error, introducce un numero entero short");
+				System.out.println("Error introducce un numero entero short");
 			}
 
 		} while (!correcto);
@@ -1044,7 +1044,7 @@ public class Leer {
 			}
 
 			if (num < 0) {
-				System.out.println("Error, introducce un numero entero positivo short");
+				System.out.println("Error introducce un numero entero positivo short");
 			}
 
 		} while (num < 0);
@@ -1066,7 +1066,7 @@ public class Leer {
 			}
 
 			if (num < 0) {
-				System.out.println("Error, introducce un numero entero positivo short");
+				System.out.println("Error introducce un numero entero positivo short");
 			}
 
 		} while (num < 0);
@@ -1109,7 +1109,7 @@ public class Leer {
 			}
 
 			if (num >= 0) {
-				System.out.println("Error, introducce un numero entero negativo short");
+				System.out.println("Error introducce un numero entero negativo short");
 			}
 
 		} while (num >= 0);
@@ -1130,7 +1130,7 @@ public class Leer {
 			}
 
 			if (num >= 0) {
-				System.out.println("Error, introducce un numero entero negativo short");
+				System.out.println("Error introducce un numero entero negativo short");
 			}
 
 		} while (num >= 0);
@@ -1180,7 +1180,7 @@ public class Leer {
 			}
 
 			if (!(num >= minimo && num <= maximo)) {
-				System.out.println("Error, Introduce un numero short entre " + minimo + " y " + maximo);
+				System.out.println("Error Introduce un numero short entre " + minimo + " y " + maximo);
 			}
 
 		} while (!(num >= minimo && num <= maximo));
@@ -1209,7 +1209,7 @@ public class Leer {
 			}
 
 			if (!(num >= minimo && num <= maximo)) {
-				System.out.println("Error, Introduce un numero short entre " + minimo + " y " + maximo);
+				System.out.println("Error Introduce un numero short entre " + minimo + " y " + maximo);
 			}
 
 		} while (!(num >= minimo && num <= maximo));
@@ -1262,7 +1262,7 @@ public class Leer {
 			}
 
 			if (!correcto) {
-				System.out.println("Error, introduce un numero real double");
+				System.out.println("Error introduce un numero real double");
 			}
 
 		} while (!correcto);
@@ -1287,7 +1287,7 @@ public class Leer {
 			}
 
 			if (!correcto) {
-				System.out.println("Error, introduce un numero real");
+				System.out.println("Error introduce un numero real");
 			}
 
 		} while (!correcto);
@@ -1334,7 +1334,7 @@ public class Leer {
 			}
 
 			if (real < 0) {
-				System.out.println("Error, introducce un numero real positivo double");
+				System.out.println("Error introducce un numero real positivo double");
 			}
 
 		} while (real < 0);
@@ -1355,7 +1355,7 @@ public class Leer {
 			}
 
 			if (real < 0) {
-				System.out.println("Error, introducce un numero real positivo double");
+				System.out.println("Error introducce un numero real positivo double");
 			}
 
 		} while (real < 0);
@@ -1396,7 +1396,7 @@ public class Leer {
 			}
 
 			if (real >= 0) {
-				System.out.println("Error, introducce un numero real negativo double");
+				System.out.println("Error introducce un numero real negativo double");
 			}
 
 		} while (real >= 0);
@@ -1416,7 +1416,7 @@ public class Leer {
 			}
 
 			if (real >= 0) {
-				System.out.println("Error, introducce un numero real negativo double");
+				System.out.println("Error introducce un numero real negativo double");
 			}
 
 		} while (real >= 0);
@@ -1466,7 +1466,7 @@ public class Leer {
 
 			if (!(real >= minimo && real <= maximo)) {
 				System.out
-						.println("Error, Introduce un numero double entre " + minimo + " y " + maximo + " como maximo");
+						.println("Error Introduce un numero double entre " + minimo + " y " + maximo + " como maximo");
 			}
 
 		} while (!(real >= minimo && real <= maximo));
@@ -1496,7 +1496,7 @@ public class Leer {
 
 			if (!(real >= minimo && real <= maximo)) {
 				System.out
-						.println("Error, Introduce un numero double entre " + minimo + " y " + maximo + " como maximo");
+						.println("Error Introduce un numero double entre " + minimo + " y " + maximo + " como maximo");
 			}
 
 		} while (!(real >= minimo && real <= maximo));
@@ -1553,13 +1553,13 @@ public class Leer {
 			}
 
 			if (!correcto) {
-				System.out.println("Error, introduce un numero real double");
+				System.out.println("Error introduce un numero real double");
 			} else {
 				parteDecimal = String.valueOf(real).split("\\.");
 
 				if (parteDecimal[1].length() > decimales) {
 					correcto = false;
-					System.out.println("Error, el numero de decimales debe ser " + decimales + " como maximo");
+					System.out.println("Error el numero de decimales debe ser " + decimales + " como maximo");
 				}
 			}
 
@@ -1589,13 +1589,13 @@ public class Leer {
 			}
 
 			if (!correcto) {
-				System.out.println("Error, introduce un numero real double");
+				System.out.println("Error introduce un numero real double");
 			} else {
 				parteDecimal = String.valueOf(real).split("\\.");
 
 				if (parteDecimal[1].length() > decimales) {
 					correcto = false;
-					System.out.println("Error, el numero de decimales debe ser " + decimales + " como maximo");
+					System.out.println("Error el numero de decimales debe ser " + decimales + " como maximo");
 				}
 			}
 
@@ -1631,7 +1631,7 @@ public class Leer {
 
 				if (parteDecimal[1].length() > decimales) {
 					correcto = false;
-					System.out.println("Error, el numero de decimales debe ser " + decimales + " como maximo");
+					System.out.println("Error el numero de decimales debe ser " + decimales + " como maximo");
 				}
 			}
 
@@ -1656,13 +1656,13 @@ public class Leer {
 			}
 
 			if (real < 0) {
-				System.out.println("Error, introducce un numero real positivo double");
+				System.out.println("Error introducce un numero real positivo double");
 			} else {
 				parteDecimal = String.valueOf(real).split("\\.");
 
 				if (parteDecimal[1].length() > decimales) {
 					real = -1;
-					System.out.println("Error, el numero de decimales debe ser " + decimales);
+					System.out.println("Error el numero de decimales debe ser " + decimales);
 				}
 			}
 
@@ -1685,13 +1685,13 @@ public class Leer {
 			}
 
 			if (real < 0) {
-				System.out.println("Error, introducce un numero real positivo double");
+				System.out.println("Error introducce un numero real positivo double");
 			} else {
 				parteDecimal = String.valueOf(real).split("\\.");
 
 				if (parteDecimal[1].length() > decimales) {
 					real = -1;
-					System.out.println("Error, el numero de decimales debe ser " + decimales);
+					System.out.println("Error el numero de decimales debe ser " + decimales);
 				}
 			}
 
@@ -1720,7 +1720,7 @@ public class Leer {
 
 				if (parteDecimal[1].length() > decimales) {
 					real = -1;
-					System.out.println("Error, el numero de decimales debe ser " + decimales);
+					System.out.println("Error el numero de decimales debe ser " + decimales);
 				}
 			}
 
@@ -1745,7 +1745,7 @@ public class Leer {
 			}
 
 			if (!correcto) {
-				System.out.println("Error, introduce un numero real float");
+				System.out.println("Error introduce un numero real float");
 			}
 
 		} while (!correcto);
@@ -1770,7 +1770,7 @@ public class Leer {
 			}
 
 			if (!correcto) {
-				System.out.println("Error, introduce un numero real float");
+				System.out.println("Error introduce un numero real float");
 			}
 
 		} while (!correcto);
@@ -1817,7 +1817,7 @@ public class Leer {
 			}
 
 			if (real < 0) {
-				System.out.println("Error, introducce un numero real positivo float");
+				System.out.println("Error introducce un numero real positivo float");
 			}
 
 		} while (real < 0);
@@ -1838,7 +1838,7 @@ public class Leer {
 			}
 
 			if (real < 0) {
-				System.out.println("Error, introducce un numero real positivo float");
+				System.out.println("Error introducce un numero real positivo float");
 			}
 
 		} while (real < 0);
@@ -1879,7 +1879,7 @@ public class Leer {
 			}
 
 			if (real >= 0) {
-				System.out.println("Error, introducce un numero real negativo float");
+				System.out.println("Error introducce un numero real negativo float");
 			}
 
 		} while (real >= 0);
@@ -1899,7 +1899,7 @@ public class Leer {
 			}
 
 			if (real >= 0) {
-				System.out.println("Error, introducce un numero real negativo float");
+				System.out.println("Error introducce un numero real negativo float");
 			}
 
 		} while (real >= 0);
@@ -1949,7 +1949,7 @@ public class Leer {
 
 			if (!(real >= minimo && real <= maximo)) {
 				System.out
-						.println("Error, Introduce un numero float entre " + minimo + " y " + maximo + " como maximo");
+						.println("Error Introduce un numero float entre " + minimo + " y " + maximo + " como maximo");
 			}
 
 		} while (!(real >= minimo && real <= maximo));
@@ -1979,7 +1979,7 @@ public class Leer {
 
 			if (!(real >= minimo && real <= maximo)) {
 				System.out
-						.println("Error, Introduce un numero float entre " + minimo + " y " + maximo + " como maximo");
+						.println("Error Introduce un numero float entre " + minimo + " y " + maximo + " como maximo");
 			}
 
 		} while (!(real >= minimo && real <= maximo));
@@ -2036,13 +2036,13 @@ public class Leer {
 			}
 
 			if (!correcto) {
-				System.out.println("Error, introduce un numero real float");
+				System.out.println("Error introduce un numero real float");
 			} else {
 				parteDecimal = String.valueOf(real).split("\\.");
 
 				if (parteDecimal[1].length() > decimales) {
 					correcto = false;
-					System.out.println("Error, el numero de decimales debe ser " + decimales + " como maximo");
+					System.out.println("Error el numero de decimales debe ser " + decimales + " como maximo");
 				}
 			}
 
@@ -2072,13 +2072,13 @@ public class Leer {
 			}
 
 			if (!correcto) {
-				System.out.println("Error, introduce un numero real float con " + decimales + " decimales como maximo");
+				System.out.println("Error introduce un numero real float con " + decimales + " decimales como maximo");
 			} else {
 				parteDecimal = String.valueOf(real).split("\\.");
 
 				if (parteDecimal[1].length() > decimales) {
 					correcto = false;
-					System.out.println("Error, el numero de decimales debe ser " + decimales + " como maximo");
+					System.out.println("Error el numero de decimales debe ser " + decimales + " como maximo");
 				}
 			}
 
@@ -2114,7 +2114,7 @@ public class Leer {
 
 				if (parteDecimal[1].length() > decimales) {
 					correcto = false;
-					System.out.println("Error, el numero de decimales debe ser " + decimales + " como maximo");
+					System.out.println("Error el numero de decimales debe ser " + decimales + " como maximo");
 				}
 			}
 
@@ -2139,13 +2139,13 @@ public class Leer {
 			}
 
 			if (real < 0) {
-				System.out.println("Error, introducce un numero real positivo float");
+				System.out.println("Error introducce un numero real positivo float");
 			} else {
 				parteDecimal = String.valueOf(real).split("\\.");
 
 				if (parteDecimal[1].length() > decimales) {
 					real = -1;
-					System.out.println("Error, el numero de decimales debe ser " + decimales);
+					System.out.println("Error el numero de decimales debe ser " + decimales);
 				}
 			}
 
@@ -2168,13 +2168,13 @@ public class Leer {
 			}
 
 			if (real < 0) {
-				System.out.println("Error, introducce un numero real positivo float");
+				System.out.println("Error introducce un numero real positivo float");
 			} else {
 				parteDecimal = String.valueOf(real).split("\\.");
 
 				if (parteDecimal[1].length() > decimales) {
 					real = -1;
-					System.out.println("Error, el numero de decimales debe ser " + decimales);
+					System.out.println("Error el numero de decimales debe ser " + decimales);
 				}
 			}
 
@@ -2203,7 +2203,7 @@ public class Leer {
 
 				if (parteDecimal[1].length() > decimales) {
 					real = -1;
-					System.out.println("Error, el numero de decimales debe ser " + decimales);
+					System.out.println("Error el numero de decimales debe ser " + decimales);
 				}
 			}
 
@@ -2243,7 +2243,7 @@ public class Leer {
 				sc.next();
 			}
 			if (!correcto) {
-				System.out.println("Error, introduce un valor booleano");
+				System.out.println("Error introduce un valor booleano");
 			}
 
 		} while (!correcto);
@@ -2264,7 +2264,7 @@ public class Leer {
 				sc.next();
 			}
 			if (!correcto) {
-				System.out.println("Error, introduce un valor booleano");
+				System.out.println("Error introduce un valor booleano");
 			}
 
 		} while (!correcto);
@@ -2321,7 +2321,7 @@ public class Leer {
 			}
 
 			if (!correcto) {
-				System.out.println("Error, introduce un valor booleano");
+				System.out.println("Error introduce un valor booleano");
 			}
 
 		} while (!correcto);
@@ -2357,7 +2357,7 @@ public class Leer {
 			}
 
 			if (!correcto) {
-				System.out.println("Error, introduce un valor booleano");
+				System.out.println("Error introduce un valor booleano");
 			}
 
 		} while (!correcto);
